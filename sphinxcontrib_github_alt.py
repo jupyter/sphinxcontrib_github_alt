@@ -1,21 +1,19 @@
-"""Define text roles for GitHub
+"""Link to GitHub issues, pull requests, commits and users from Sphinx docs.
+
+This extension adds the following roles:
 
 * ghissue - Issue
 * ghpull - Pull Request
+* ghcommit - Commit
 * ghuser - User
 
 Adapted from bitbucket example here:
-https://bitbucket.org/birkenfeld/sphinx-contrib/src/tip/bitbucket/sphinxcontrib/bitbucket.py
-
-Authors
--------
-
-* Doug Hellmann
-* Min RK
+https://bitbucket.org/dhellmann/sphinxcontrib-bitbucket
 """
-#
 # Original Copyright (c) 2010 Doug Hellmann.  All rights reserved.
-#
+# Distributed under the 2-clause BSD license: see COPYING.md for license text.
+
+__version__ = '1.0'
 
 from docutils import nodes, utils
 from docutils.parsers.rst.roles import set_classes

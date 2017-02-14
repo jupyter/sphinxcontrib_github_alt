@@ -10,7 +10,7 @@ This extension adds the following roles:
 Adapted from bitbucket example here:
 https://bitbucket.org/dhellmann/sphinxcontrib-bitbucket
 """
-# Original Copyright (c) 2010 Doug Hellmann.  All rights reserved.
+# Copyright (c) 2010- Doug Hellmann & Jupyter Development Team. All rights reserved.
 # Distributed under the 2-clause BSD license: see COPYING.md for license text.
 
 __version__ = '1.0'

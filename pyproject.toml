@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "sphinxcontrib_github_alt"
+author = "Jupyter Development Team"
+author-email = "jupyter@googlegroups.com"
+home-page = "https://github.com/jupyter/sphinxcontrib_github_alt"
+description-file = "README.rst"
+classifiers = [
+    "Framework :: Sphinx :: Extension",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Documentation :: Sphinx",
+    "Topic :: Software Development :: Bug Tracking",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Version Control"
+]
+

@@ -1,0 +1,29 @@
+name: Cover installation and module import
+
+on:
+- pull_request
+- push
+
+jobs:
+  pip_detect_outdated:
+    name: Cover installation and module import
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v1.1.1
+        with:
+          python-version: 3.8
+
+      - name: Install build dependencies
+        run: |-
+          sudo apt-get install --yes --no-install-recommends virtualenv
+
+      - name: Install and import with fresh virtualenv
+        run: |-
+          set -e
+          virtualenv --python=python3 venv
+          venv/bin/pip install flit Pygments
+          venv/bin/python -m flit install
+          venv/bin/python -c 'import sphinxcontrib_github_alt'

@@ -24,6 +24,5 @@ jobs:
         run: |-
           set -e
           virtualenv --python=python3 venv
-          venv/bin/pip install flit Pygments
-          venv/bin/python -m flit install
+          venv/bin/pip install .
           venv/bin/python -c 'import sphinxcontrib_github_alt'

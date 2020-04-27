@@ -13,7 +13,7 @@ https://bitbucket.org/dhellmann/sphinxcontrib-bitbucket
 # Copyright (c) 2010- Doug Hellmann & Jupyter Development Team. All rights reserved.
 # Distributed under the 2-clause BSD license: see COPYING.md for license text.
 
-__version__ = '1.1'
+__version__ = '1.2'
 
 from docutils import nodes, utils
 from docutils.parsers.rst.roles import set_classes

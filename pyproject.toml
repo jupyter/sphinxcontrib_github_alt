@@ -8,6 +8,10 @@ author = "Jupyter Development Team"
 author-email = "jupyter@googlegroups.com"
 home-page = "https://github.com/jupyter/sphinxcontrib_github_alt"
 description-file = "README.rst"
+requires = [
+    "docutils",
+    "sphinx",
+]
 classifiers = [
     "Framework :: Sphinx :: Extension",
     "License :: OSI Approved :: BSD License",
